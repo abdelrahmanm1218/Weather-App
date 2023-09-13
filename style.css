@@ -38,19 +38,32 @@ body {
     padding: 10px 20px;
     margin: 0px auto 20px;
     max-width: 100%;
+    
 }
 .container .card .mini .info {
     flex: 1;
     display: flex;
     height: 70px;
     align-items: center;
+    background-image: linear-gradient(to right,#36d1dc,#5b86e5);
+    padding: 20px;
+    border-radius: 20px;;
+    
 }
 .container .card .mini .info span {
     margin-right: 30px;
     font-size: 20px;
-    color: #777;
+    color: white;
     text-transform: capitalize;
-    width: 70px;
+    width: 100px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container .card .mini .info span:nth-of-type(1),
+.container .card .mini .info span:nth-of-type(2){
+    border-right: 1px solid white;
 }
 .container .card .mini .info span.condition {
     font-weight: bold;
@@ -92,9 +105,10 @@ body {
     flex-direction: column;
     width: 100px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     align-items: center;
-    background-color: #00B9FC; /*#00B9FC*/
+    /* background-color: #00B9FC; /*#00B9FC */
+    background-image: linear-gradient(to right,#36d1dc,#5b86e5);
     box-shadow: 0px 3px 5px #CCC;
     color: white;
     transition: 0.3s;
@@ -110,3 +124,7 @@ body {
 .container .card .next-days .day {
     font-size: 19px;
 }
+
+/* #43cea2 → #185a9d */
+/* #4568dc → #b06ab3 */
+/* #36d1dc → #5b86e5 */
